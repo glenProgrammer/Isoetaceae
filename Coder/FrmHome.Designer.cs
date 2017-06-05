@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.LblInputType = new System.Windows.Forms.Label();
+            this.LblOutputType = new System.Windows.Forms.Label();
             this.BtnEncode = new System.Windows.Forms.Button();
             this.BtnDecode = new System.Windows.Forms.Button();
             this.CBoxInput = new System.Windows.Forms.ComboBox();
@@ -40,7 +40,7 @@
             this.LblKey = new System.Windows.Forms.Label();
             this.LblInput = new System.Windows.Forms.Label();
             this.LblOutput = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LblMethod = new System.Windows.Forms.Label();
             this.CBoxMethod = new System.Windows.Forms.ComboBox();
             this.BtnOpenFile = new System.Windows.Forms.Button();
             this.BtnSaveFile = new System.Windows.Forms.Button();
@@ -50,31 +50,31 @@
             this.LblSelectedInputFile = new System.Windows.Forms.Label();
             this.LblSelectedOutputFile = new System.Windows.Forms.Label();
             this.epInput = new System.Windows.Forms.ErrorProvider(this.components);
-            this.lblDone = new System.Windows.Forms.Label();
+            this.LblDone = new System.Windows.Forms.Label();
             this.epOutput = new System.Windows.Forms.ErrorProvider(this.components);
             this.helpProvider = new System.Windows.Forms.HelpProvider();
-            this.lblKeyHelp = new System.Windows.Forms.Label();
+            this.LblKeyHelp = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.epInput)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.epOutput)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // LblInputType
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(52, 107);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(34, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Input:";
+            this.LblInputType.AutoSize = true;
+            this.LblInputType.Location = new System.Drawing.Point(52, 107);
+            this.LblInputType.Name = "LblInputType";
+            this.LblInputType.Size = new System.Drawing.Size(34, 13);
+            this.LblInputType.TabIndex = 0;
+            this.LblInputType.Text = "Input:";
             // 
-            // label2
+            // LblOutputType
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 144);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(42, 13);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Output:";
+            this.LblOutputType.AutoSize = true;
+            this.LblOutputType.Location = new System.Drawing.Point(45, 144);
+            this.LblOutputType.Name = "LblOutputType";
+            this.LblOutputType.Size = new System.Drawing.Size(42, 13);
+            this.LblOutputType.TabIndex = 0;
+            this.LblOutputType.Text = "Output:";
             // 
             // BtnEncode
             // 
@@ -164,14 +164,14 @@
             this.LblOutput.TabIndex = 7;
             this.LblOutput.Text = "Output";
             // 
-            // label7
+            // LblMethod
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(41, 72);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(46, 13);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Method:";
+            this.LblMethod.AutoSize = true;
+            this.LblMethod.Location = new System.Drawing.Point(41, 72);
+            this.LblMethod.Name = "LblMethod";
+            this.LblMethod.Size = new System.Drawing.Size(46, 13);
+            this.LblMethod.TabIndex = 0;
+            this.LblMethod.Text = "Method:";
             // 
             // CBoxMethod
             // 
@@ -244,39 +244,39 @@
             // 
             this.epInput.ContainerControl = this;
             // 
-            // lblDone
+            // LblDone
             // 
-            this.lblDone.AutoSize = true;
-            this.lblDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDone.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.lblDone.Location = new System.Drawing.Point(156, 533);
-            this.lblDone.Name = "lblDone";
-            this.lblDone.Size = new System.Drawing.Size(52, 20);
-            this.lblDone.TabIndex = 13;
-            this.lblDone.Text = "Done!";
-            this.lblDone.Visible = false;
+            this.LblDone.AutoSize = true;
+            this.LblDone.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblDone.ForeColor = System.Drawing.SystemColors.Highlight;
+            this.LblDone.Location = new System.Drawing.Point(156, 533);
+            this.LblDone.Name = "LblDone";
+            this.LblDone.Size = new System.Drawing.Size(52, 20);
+            this.LblDone.TabIndex = 13;
+            this.LblDone.Text = "Done!";
+            this.LblDone.Visible = false;
             // 
             // epOutput
             // 
             this.epOutput.ContainerControl = this;
             // 
-            // lblKeyHelp
+            // LblKeyHelp
             // 
-            this.lblKeyHelp.AutoSize = true;
-            this.lblKeyHelp.Location = new System.Drawing.Point(5, 229);
-            this.lblKeyHelp.Name = "lblKeyHelp";
-            this.lblKeyHelp.Size = new System.Drawing.Size(377, 13);
-            this.lblKeyHelp.TabIndex = 14;
-            this.lblKeyHelp.Text = "The key can be any combination of numbers, letters, spaces, and punctuation.";
-            this.lblKeyHelp.Visible = false;
+            this.LblKeyHelp.AutoSize = true;
+            this.LblKeyHelp.Location = new System.Drawing.Point(5, 229);
+            this.LblKeyHelp.Name = "LblKeyHelp";
+            this.LblKeyHelp.Size = new System.Drawing.Size(377, 13);
+            this.LblKeyHelp.TabIndex = 14;
+            this.LblKeyHelp.Text = "The key can be any combination of numbers, letters, spaces, and punctuation.";
+            this.LblKeyHelp.Visible = false;
             // 
             // FrmHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(877, 663);
-            this.Controls.Add(this.lblKeyHelp);
-            this.Controls.Add(this.lblDone);
+            this.Controls.Add(this.LblKeyHelp);
+            this.Controls.Add(this.LblDone);
             this.Controls.Add(this.LblSelectedOutputFile);
             this.Controls.Add(this.LblSelectedInputFile);
             this.Controls.Add(this.BtnSaveFile);
@@ -292,9 +292,9 @@
             this.Controls.Add(this.CBoxInput);
             this.Controls.Add(this.BtnDecode);
             this.Controls.Add(this.BtnEncode);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LblOutputType);
+            this.Controls.Add(this.LblMethod);
+            this.Controls.Add(this.LblInputType);
             this.Name = "FrmHome";
             this.Text = "Isoetaceae - Cipher Encoding and Decoding";
             this.Load += new System.EventHandler(this.FrmHome_Load);
@@ -307,8 +307,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblInputType;
+        private System.Windows.Forms.Label LblOutputType;
         private System.Windows.Forms.Button BtnEncode;
         private System.Windows.Forms.Button BtnDecode;
         private System.Windows.Forms.ComboBox CBoxInput;
@@ -318,7 +318,7 @@
         private System.Windows.Forms.Label LblKey;
         private System.Windows.Forms.Label LblInput;
         private System.Windows.Forms.Label LblOutput;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label LblMethod;
         private System.Windows.Forms.ComboBox CBoxMethod;
         private System.Windows.Forms.Button BtnOpenFile;
         private System.Windows.Forms.Button BtnSaveFile;
@@ -328,10 +328,10 @@
         private System.Windows.Forms.Label LblSelectedInputFile;
         private System.Windows.Forms.Label LblSelectedOutputFile;
         private System.Windows.Forms.ErrorProvider epInput;
-        private System.Windows.Forms.Label lblDone;
+        private System.Windows.Forms.Label LblDone;
         private System.Windows.Forms.ErrorProvider epOutput;
         private System.Windows.Forms.HelpProvider helpProvider;
-        private System.Windows.Forms.Label lblKeyHelp;
+        private System.Windows.Forms.Label LblKeyHelp;
     }
 }
 

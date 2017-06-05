@@ -45,7 +45,7 @@ namespace Coder
 
         private void HideDoneLabel()
         {
-            lblDone.Visible = false;
+            LblDone.Visible = false;
         }
 
         private void CBoxInput_SelectedIndexChanged(object sender, EventArgs e)
@@ -144,13 +144,13 @@ namespace Coder
                     break;
             }
 
-            lblDone.Visible = true;
+            LblDone.Visible = true;
 
             //Stop showing "done" after a while.
             const int DONE_DISPLAY_TIME_MILISECONDS = 1500;
             Task.Delay(DONE_DISPLAY_TIME_MILISECONDS).GetAwaiter().OnCompleted( () => {
-                if (lblDone != null)
-                    lblDone.Visible = false;
+                if (LblDone != null)
+                    LblDone.Visible = false;
                 });
         }
 
@@ -188,12 +188,12 @@ namespace Coder
 
         private void LblKey_MouseHover(object sender, EventArgs e)
         {
-            lblKeyHelp.Visible = true;
+            LblKeyHelp.Visible = true;
         }
 
         private void LblKey_MouseLeave(object sender, EventArgs e)
         {
-            lblKeyHelp.Visible = false;
+            LblKeyHelp.Visible = false;
         }
     }
 }
